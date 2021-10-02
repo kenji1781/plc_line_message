@@ -82,8 +82,8 @@ try:
             print(resp) 
             print(type(resp))
             resp_decode = resp.decode('utf-8')
-            resp_dec = resp_decode[-4:] #末尾4バイト分取出
-            resp_dec = int(resp_dec,16) #int型10進数に変換
+            resp_dec = resp_decode[-4:]
+            resp_dec = int(resp_dec,16)
         
         except socket.error as e:
             print("通信エラー")
